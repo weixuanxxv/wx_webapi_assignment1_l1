@@ -21,7 +21,7 @@ if (studentarray.some(student => student.id === students.id )){
 }
 // if id , name or school is empty
 else if (!students.id || !students.name ||!students.school){
-    console.error("Failed to add student due to missing fields);
+    console.error("Failed to add student due to missing fields");
     
 }
 // if new student id is not a integer
