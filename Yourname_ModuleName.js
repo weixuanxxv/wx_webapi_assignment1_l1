@@ -16,18 +16,18 @@ studentarray, // include array into the exports so can be used in app.js
 {
 //If new student id arlready exists in student data
 if (studentarray.some(student => student.id === students.id )){
-    console.error("Student Id already exists.");
-    return"Failed to add student due to id already exists";
+    console.error("Failed to add student due to id already exists");
+    
 }
 // if id , name or school is empty
 else if (!students.id || !students.name ||!students.school){
-    console.error("Missing student id or student name");
-    return"Failed to add student due to missing fields";
+    console.error("Failed to add student due to missing fields);
+    
 }
 // if new student id is not a integer
 else if(!Number.isInteger(students.id)){
-    console.error("Failed to add student due to incorrect format");
-    return"Id need to be a interger";
+    console.error("Failed to add student due to incorrect format.Id need to be a interger!");
+    
 }
 else{
 studentarray.push(students);   //using .push() to insert data into the studentarray
@@ -105,7 +105,8 @@ const lowercase = studentschool.toLowerCase(); // delcare another variable that 
     });
 
     if (count === 0) {
-        return `No students found for school ${studentschool}.`;
+      console.error(`No students found for school ${studentschool}.`);
+    
     }
 
     const averageGrade = totalGrade / count;
@@ -123,7 +124,7 @@ studentsineachsch (studentschool){
         
     );
     if(count == 0){
-        return `There is no student for this ${studentschool}`;
+            console.error(`No students found for school ${studentschool}.`);
     }
 
     return `The total student for ${studentschool} is ${count}`;
