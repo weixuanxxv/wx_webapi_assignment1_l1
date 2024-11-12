@@ -1,4 +1,4 @@
-const student = require("./studentdata.js");
+const student = require("./Weixuan_studentdata.js");
 //Function 1
 const newStudent = { id:4, name:"wx", school:"SEG",grade:50};
 console.log(student.createstudentinfo(newStudent));
