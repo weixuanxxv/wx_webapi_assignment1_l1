@@ -1,11 +1,10 @@
  
 // //create a studentarray with exsiting data
 const studentarray =  [ 
-    { id:1 , name:"Jone Doe" , school:"SEG" , grade:"80"},
-    { id:2 , name:"Joe Doe" , school:"SBM" , grade:"70"},
-    { id:3 , name:"Failure john" , school:"SBM" , grade:"49"}
+    { id:1 , name:"John Cena" , school:"SEG" , grade:"80"},
+    { id:2 , name:"Dae Ong" , school:"SBM" , grade:"70"},
+    { id:3 , name:"Woyaokule" , school:"SBM" , grade:"49"}
  ]
-
 
 
 
