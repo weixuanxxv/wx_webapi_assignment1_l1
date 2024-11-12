@@ -96,9 +96,9 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
  getAverageGrade(studentschool) {
     let totalGrade = 0;
     let count = 0;
-
+const lowercase = studentschool.toLowerCase(); // delcare another variable that will convert studentschool to lowercase first
     studentarray.forEach(student => {
-        if (student.school === studentschool) {
+        if (student.school.toLowerCase() === lowercase) {  //compare student.school in lowercase with the prev lowercase variable to make sure is not affected by any caps letter.
             totalGrade += parseInt(student.grade);
             count += 1;
         }
