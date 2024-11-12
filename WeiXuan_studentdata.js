@@ -65,7 +65,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
 },
 // //Function 4 check grade
 //checking student grade based on their id
- checkgrade (studentid){
+ checkgradeawarded (studentid){
    const student = studentarray.find(student => student.id == studentid);
    if (student){
     const grade = parseInt(student.grade);
@@ -115,7 +115,7 @@ const lowercase = studentschool.toLowerCase(); // delcare another variable that 
 
 //function 6 display all students in each school
 
-studentsineachsch (studentschool){
+totalstudentsineachsch (studentschool){
     let count = 0;
     studentarray.forEach(student => {
          if (studentschool === student.school){   
