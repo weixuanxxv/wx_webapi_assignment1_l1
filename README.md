@@ -12,7 +12,7 @@ The Student Data Management is a simple based solution using Node.js designed to
 ## Steps Before Starting
 
 - Create an array name `studentarray` with to hold data
-- Add objects into the `studnetarray` as showed below 
+- Add objects into the `studentarray` as showed below 
 
 ```js
 const studentarray =  [ 
@@ -23,7 +23,7 @@ const studentarray =  [
 ```
 ## createstudentinfo
 - `newStudent`: Delcare a const variable that is holding objects.
-- `createStudentinfo(newStudent)`: Call the function to add `newStudent` into the `studentarray`.
+- `createstudentinfo(newStudent)`: Call the function to add `newStudent` into the `studentarray`.
 - if `newStudent` id dosen't exists in `studentarray` it will be inserted by `.push` that was delcared in `studentdata.js`.
 ```js
 const newStudent = { id:4, name:"wx", school:"SEG",grade:50};
@@ -72,7 +72,7 @@ Student not found
 ```
 
 ## getAverageGrade
-- `checkgradeawarded`: This Function is meant checking the average score of all students in a school
+- `etAverageGrade`: This Function is meant checking the average score of all students in a school
 - `getAverageGrade("SBM")`: Call this function to get the average grade all students scored in the school "SBM".
 ```js
 getAverageGrade("SBM");
