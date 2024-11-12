@@ -60,7 +60,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
         studentarray.splice(studentid);
         return "Student has been deleted!"
     }else{
-        return "student not found!";
+       console.error("No student deleted as id can't be found");
     }
 },
 // //Function 4 check grade
