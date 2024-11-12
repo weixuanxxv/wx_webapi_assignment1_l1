@@ -57,7 +57,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
  deletestudentbyid (studentid){
     const student = studentarray.find(student => student.id== studentid);
     if(student){
-        studentarray.splice(studentid);
+        studentarray.splice(studentid); //using .splice to remove object from array
         return "Student has been deleted!"
     }else{
        console.error("No student deleted as id can't be found");
@@ -98,7 +98,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
     let count = 0;
 const lowercase = studentschool.toLowerCase(); // delcare another variable that will convert studentschool to lowercase first
     studentarray.forEach(student => {
-        if (student.school.toLowerCase() === lowercase) {  //compare student.school in lowercase with the prev lowercase variable to make sure is not affected by any caps letter.
+        if (student.school.toLowerCase() === lowercase) {  //convert student.school to lowercase and compare with the prev lowercase variable to make sure is not affected by any caps letter.
             totalGrade += parseInt(student.grade);
             count += 1;
         }
