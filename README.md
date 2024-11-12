@@ -1,6 +1,6 @@
 Assignment 1
 # Student Data Management
-The Student Data Management is a simple based solution using Node.js designed to help with student data, providing a range of functions, including creatingstudentinfo , updatestudentinfo , deletestudentinfo , checkgradeawarded , getavgscore , totalstudentsineachsch
+The Student Data Management is a simple Node. js-based solution designed to help manage student data. It provides various functions, including creating, updating, and deleting student information, checking grade awards, calculating average scores, and counting students by school.
 
 # Functions
 1. [createstudentinfo](#createstudentinfo)
@@ -11,8 +11,8 @@ The Student Data Management is a simple based solution using Node.js designed to
 6. [totalstudentsineachsch](#totalstudentsineachsch)
 ## Steps Before Starting
 
-- Create an array name `studentarray` with to hold data
-- Add objects into the `studentarray` as showed below 
+- Create an array name `studentarray` to hold student data
+- Add student objects into the `studentarray` as shown below 
 
 ```js
 const studentarray =  [ 
@@ -22,9 +22,9 @@ const studentarray =  [
  ]
 ```
 ## createstudentinfo
-- `newStudent`: Delcare a const variable that is holding objects.
-- `createstudentinfo(newStudent)`: Call the function to add `newStudent` into the `studentarray`.
-- if `newStudent` id dosen't exists in `studentarray` it will be inserted by `.push` that was delcared in `studentdata.js`.
+- `newStudent`: Delcare a const variable that holds the student object to be added.
+- `createstudentinfo(newStudent)`: This function to add `newStudent` to the `studentarray`.
+- if `newStudent` id doesn't exist in `studentarray` it will be inserted by `.push` that was declared in `studentdata.js`.
 ```js
 const newStudent = { id:4, name:"wx", school:"SEG",grade:50};
 createstudentinfo(newStudent);
@@ -32,7 +32,7 @@ createstudentinfo(newStudent);
 - If `newStudent` id exists in array output:
 ```js
 Student Id already exists.
-Failed to add student due to d arleady exists.
+Failed to add student due to id already exists.
 ```
 
 ## updatestudentinfo
@@ -41,7 +41,7 @@ Failed to add student due to d arleady exists.
 ```js
 updatestudentinfo(2,"SEG",70);
 ```
-- if id given dosen't exists in `studentarray` it will be return:
+- if id given doesn't exist in `studentarray` it will be return:
  ```js
 No student id is found.
 ```
@@ -54,25 +54,25 @@ No student id is found.
 deletestudentbyid(4);
 
 ```
-- if id given dosen't exists in `studentarray` it will be return:
+- if id given doesn't exist in `studentarray` it will be return:
  ```js
 No student deleted as id can't be found
 ```
 
 ## checkgradeawarded
-- `checkgradeawarded`: This Function is meant for giving a grade based on the student Score. For example if they score 90 the graded awarded will be A
-- `checkgradeawarded(1)`: Call this function to check student grade based on their id, afterwards they will retrieve the score and give a grade based on the conditions declared in `studentdata.js`.
+- `checkgradeawarded`: This Function is meant to give a grade based on the student Score. For example, if they score 90 the grade awarded will be A
+- `checkgradeawarded(1)`: Call this function to check student grades based on their id, afterwards they will retrieve the score and give a grade based on the conditions declared in `studentdata.js`.
 ```js
 checkgradeawarded(1)
 
 ```
-- if id given dosen't exists in `studentarray` it will be return:
+- if id given doesn't exist in `studentarray` it will be return:
  ```js
 Student not found
 ```
 
 ## getAverageGrade
-- `etAverageGrade`: This Function is meant checking the average score of all students in a school
+- `etAverageGrade`: This Function is meant to check the average score of all students in a school
 - `getAverageGrade("SBM")`: Call this function to get the average grade all students scored in the school "SBM".
 ```js
 getAverageGrade("SBM");
@@ -83,7 +83,7 @@ getAverageGrade("SBM");
 No students found for school SBM
 ```
 ## totalstudentsineachsch
-- `totalstudentsineachsch`: This Function is to check the total student in that belong to the same school
+- `totalstudentsineachsch`: This Function is to check the total student that belong to the same school
 - `totalstudentsineachsch("SBM")`: Call this function to get the total students in school "SBM".
 ```js
 totalstudentsineachsch("SBM")
@@ -96,5 +96,5 @@ No students found for school SBM
 
 
 # References
-- https://stackoverflow.com/questions/24834812/space-in-between-json-stringify-output(for outputting array with space indentation)
+- https://stackoverflow.com/questions/24834812/space-in-between-json-stringify-output (for the outputting array with space indentation)
 - https://stackoverflow.com/questions/10024866/remove-object-from-array-using-javascript (removing object from array)
