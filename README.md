@@ -98,3 +98,5 @@ No students found for school SBM
 # References
 - https://stackoverflow.com/questions/24834812/space-in-between-json-stringify-output (for the outputting array with space indentation)
 - https://stackoverflow.com/questions/10024866/remove-object-from-array-using-javascript (removing object from array)
+- https://www.w3schools.com/java/java_conditions_shorthand.asp (ternary operator)
+- https://stackoverflow.com/questions/6259982/how-do-you-use-the-conditional-operator-in-javascript (ternary operator)
