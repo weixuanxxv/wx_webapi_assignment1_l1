@@ -74,8 +74,8 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
    const student = studentarray.find(student => student.id == studentid);
    if (student){
     const grade = parseInt(student.grade);
-    const gradeAwarded = 
-        grade >= 80 ? "A" :
+    const gradeawarded = 
+        grade >= 80 ? "A" : //this code mean if grade is equal to more than  80 gradeawarded will be A, and so on..
         grade >= 75 ? "B+" :
         grade >= 60 ? "B" :
         grade >= 55 ? "C" :
