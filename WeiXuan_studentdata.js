@@ -17,16 +17,19 @@ studentarray, // include array into the exports so can be used in app.js
 //If new student id arlready exists in student data
 if (studentarray.some(student => student.id === students.id )){
     console.error("Failed to add student due to id already exists");
+ return;
     
 }
 // if id , name or school is empty
 else if (!students.id || !students.name ||!students.school){
     console.error("Failed to add student due to missing fields");
+  return;
     
 }
 // if new student id is not a integer
 else if(!Number.isInteger(students.id)){
     console.error("Failed to add student due to incorrect format.Id need to be a interger!");
+  return;
     
 }
 else{
@@ -49,6 +52,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
     }
     else{
         console.error("No student id is found");
+      return;
     }
 
 },
@@ -61,6 +65,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
         return "Student has been deleted!"
     }else{
        console.error("No student deleted as id can't be found");
+      return;
     }
 },
 // //Function 4 check grade
@@ -89,6 +94,7 @@ updatestudentinfo (studentid , newstudentschool , newstudentgrade){
        
    }else
    console.error("Student not found");
+   return;
 },
 
 
@@ -106,6 +112,7 @@ const lowercase = studentschool.toLowerCase(); // delcare another variable that 
 
     if (count === 0) {
       console.error(`No students found for school ${studentschool}.`);
+      return;
     
     }
 
@@ -125,6 +132,7 @@ totalstudentsineachsch (studentschool){
     );
     if(count == 0){
             console.error(`No students found for school ${studentschool}.`);
+      return;
     }
 
     return `The total student for ${studentschool} is ${count}`;
